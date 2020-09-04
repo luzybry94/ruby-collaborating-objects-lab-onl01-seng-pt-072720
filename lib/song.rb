@@ -17,6 +17,7 @@ class Song
     new_song = self.new(filename.split("-")[1].strip)
     new_song.artist = Artist.new(filename.split("-")[0].strip)
     new_song
+    binding.pry
   end
   
   def artist_name=(str)
